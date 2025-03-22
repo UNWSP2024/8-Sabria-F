@@ -31,7 +31,7 @@ def main():
     if continue_quiz=="y":
 
         x=0
-        while x<11:
+        while x<10:
             x+=1
             state = random.choice(state_names)
             correct_answer = CAPITALS[state]
@@ -40,7 +40,7 @@ def main():
 
             if answer == correct_answer:
                 num_correct += 1
-                print(f"Congratulation! Your answer is correct. The capital of {state} is {correct_answer}.")
+                print(f"Congratulations! Your answer is correct. The capital of {state} is {correct_answer}.")
 
             else:
                 num_incorrect += 1
